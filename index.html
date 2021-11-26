@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet"> 
+    <script src="js/weather.js"></script>
+    <title>AJAX TUT</title>
+</head>
+<body>
+    <div id="title" style="display: flex; justify-content: space-between;">
+        <h1 id="h1tit">Weather & Forecast API</h1>
+        <a style="color: lightblue; text-decoration: none;" id="sharebtn" href="">Share On Facebook</a>
+    </div>
+    <div style="width:100%; display:flex; justify-content:center;" class="form-input">
+        <input style="width: 30%;" type="button" id="jsonbtn" value="Forecast Of 5 Days Every 3 Hours"/>
+        <input style="width: 44%;" type="text" id="cityname" placeholder="Enter City Name"/>
+        <input style="width: 25%;" type="button" id="xmlbtn" value="Current Weather"/>
+        <div id="validation"></div>
+    </div>
+    
+    <div style="display: none;" id="loader"></div>
+    <div id="result-area" class="animate-bottom"></div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style2.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet"> 
+    <script src="js/weather.js"></script>
+    <title>AJAX TUT</title>
+</head>
+<body>
+    <div id="title" style="display: flex; justify-content: space-between;">
+        <h1></h1>
+        <a style="padding: 5px; font-size: 20px; text-decoration: none;" id="sharebtn" href="">Share On Facebook</a>
+    </div>
+    <div class="form-input">
+        <input style="width: 100%;" type="text" id="cityname" placeholder="Enter City Name"/>
+        <div id="validation"></div>
+    </div>
+    <div style="width: 100%; display: flex; justify-content: space-between;">
+        <input type="button" id="xmlbtn" value="Weather"/>
+        <input type="button" id="jsonbtn" value="Forecast"/>
+    </div>
+    <div style="width:100%; display:flex; justify-content:center;" class="form-input">
+        <input style="width: 10%;" type="button" id="forecast1" value="1 Day"/>
+        <input style="width: 10%;" type="button" id="forecast2" value="2 Days"/>
+        <input style="width: 10%;" type="button" id="forecast3" value="3 Days"/>
+        <input style="width: 10%;" type="button" id="forecast4" value="4 Days"/>
+        <input style="width: 10%;" type="button" id="forecast5" value="5 Days"/>
+        <input style="width: 10%;" type="button" id="forecast6" value="6 Days"/>
+        <input style="width: 10%;" type="button" id="forecast7" value="7 Days"/>
+        <input style="width: 10%;" type="button" id="forecast8" value="8 Days"/>
+        <input style="width: 10%;" type="button" id="forecast9" value="9 Days"/>
+        <input style="width: 10%;" type="button" id="forecast10" value="10 Days"/>
+    </div>
+    <div style="display: none;" id="loader"></div>
+    <div id="result-area" class="animate-bottom"></div>
+</body>
+</html>

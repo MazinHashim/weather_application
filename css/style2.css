@@ -1,0 +1,81 @@
+*{
+box-sizing: border-box;
+}
+body{
+    width: 90%;
+    height: 98vh;
+    margin: 0 auto;
+    background: url("../img/back2.jpg") center center fixed;
+    background-size: cover;
+}
+title,
+.form-input input[type='text'],
+.form-input input[type='button']{
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+    border: none;
+}
+.title{
+    padding: 10px;
+    font-size: 0.8em;
+    color: white;
+    margin: 10px 0;
+    background-color: rgba(230, 152, 80, 0.3);
+}
+.form-input{ margin: 30px 0; display: block; }
+.form-input input[type='text']{
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255, 0.3);
+}
+#sharebtn,
+input[type='button']{
+    color: white;
+    padding: 60px;
+    font-size: 60px;
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: 1px 1px 5px 3px rgb(243, 255, 230, 0.3);
+    background-color: rgba(230, 152, 80, 0.3);
+    -webkit-transition: all 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: all 0.5s;
+}
+#sharebtn:hover,
+input[type='button']:hover{
+    background-color: rgba(255, 255, 255, 0.466);
+    color: black;
+    box-shadow: 3px 2px 5px 5px inset rgba(230, 152, 80, 0.3);
+    /* border-radius: 0 20%; */
+    transform: scale(1.13);
+}
+#result-area .container{
+    font-family: 'Acme', sans-serif;
+    background-color: rgba(230, 152, 80, 0.3);
+    display: grid;
+    justify-content: center;
+    margin: 5px 0;
+    padding: 20px;
+    width: 100%;
+    float: left;
+    border-radius: 0;
+}
+#result-area .container div.h-con{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: start;
+    border: 1px solid rgba(230, 152, 80, 0.3);
+    padding: 30px;
+    background-color: rgba(230, 152, 80, 0.3);
+    -webkit-transition: all 0.3s; /* For Safari 3.1 to 6.0 */
+    transition: all 0.3s;
+    line-height: 2;
+    color: white;
+    width: 60rem;
+}
+#result-area .container div.h-con:hover{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    transform: scale(1.05);
+}

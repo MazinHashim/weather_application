@@ -1,0 +1,152 @@
+*{
+box-sizing: border-box;
+}
+body{
+    width: 90%;
+    height: 98vh;
+    margin: 0 auto;
+    background: url("../img/weather_back.jpg") center center fixed;
+    background-size: cover;
+}
+#sharebtn,
+.form-input input[type='text'],
+.form-input input[type='button']{
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+    background-color: rgba(87, 188, 250, 0.219);
+    /* border-radius: 5px; */
+    border: 1px solid lightskyblue;
+}
+#validation{ display: none; }
+#title h1,
+#validation{
+    font-family: 'Acme', sans-serif;
+    font-size: 29px;
+    margin: 0;
+}
+#title,
+#validation{
+    padding: 10px;
+    color: rgb(8, 19, 168);
+    margin: 10px 0 10px;
+    background-color: rgb(0, 0, 0, 0.0);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    -webkit-transition: all 1s; /* For Safari 3.1 to 6.0 */
+    transition: all 1s;
+}
+.form-input{margin: 30px 0;}
+#sharebtn,
+.form-input input[type='text'],
+.form-input input[type='button']{
+    padding: 10px;
+    font-size: 20px;
+}
+#sharebtn,
+.form-input input[type='button']{
+    color: white;
+    background-color: rgb(0, 0, 0, 0.0);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    -webkit-transition: all 1s; /* For Safari 3.1 to 6.0 */
+    transition: all 1s;
+}
+#sharebtn:hover,
+.form-input input[type='button']:hover{
+    background-color: rgb(8, 174, 224);
+    box-shadow: 3px 2px 5px 5px inset white;
+}
+#result-area .container{
+    font-family: 'Acme', sans-serif;
+    display: grid;
+    justify-content: center;
+    margin: 5px 0;
+    padding: 20px;
+    width: 33.333333%;
+    float: left;
+    border-radius: 0;
+}
+.container.bg-weather{
+    background-color: rgba(135, 206, 250, 0.486);
+    -webkit-transition: all 0.3s; /* For Safari 3.1 to 6.0 */
+    transition: all 0.3s;
+    filter: blur(6px);
+}
+.container.bg-weather:hover{
+    background-color: white;
+    border-radius: 0 30%;
+    filter: blur(0);
+}
+#result-area .container div.h-con{
+    font-size: 20px;
+    font-weight: 700;
+    background: url("../img/weather_back.jpg") center center fixed;
+    filter: blur(2px);
+    text-align: start;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.3s; /* For Safari 3.1 to 6.0 */
+    transition: all 0.3s;
+    line-height: 2;
+    color: white;
+    width: 22rem;
+}
+#result-area .container div.h-con:hover{        
+    background: white;
+    border: 2px solid lightskyblue;
+    filter: blur(0px);
+    border-bottom: 0;
+    box-shadow: none;
+    border-top: 0;
+    color: black;
+    transform: scale(1.1);
+    border-width: 1px 3px;
+    border-radius: 0 30%;
+}
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border-right: 10px dotted #ffffffcb;
+    border-top: 5px dotted lightskyblue;
+    border-bottom: 8px dotted lightskyblue;
+    border-left: 10px dotted rgba(255, 255, 255, 0.726);
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
